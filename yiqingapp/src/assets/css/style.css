@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+   display: flex;
+   border-bottom: 1px solid #ccc;
+   position: relative;
+}
+.navItem{
+    width: 88px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    font-style: 16px;
+}
+.navItem.active{
+    font-weight: 900;
+}
+.nav .bar{
+    position: absolute;
+    width: 44px;
+    height: 5px;
+    background-color: red;
+    bottom: 0px;
+    transition: 0.5s ; 
+}
+.content{
+    display: flex;
+    width: 1500px;
+    height: calc(100vh - 45px);
+    transition: 0.5s ease;
+    overflow-x: auto;
+}
+.contentItem{
+    width: 375px;
+}
+.new .banner img{
+    width: 100%;
+}
+.new .banner h1{
+    font-size: 20px;
+    padding: 0 15px;
+    height: 50px;
+    line-height: 50px;
+}
+.newContent{
+    height: 1100px;
+    display: flex;
+}
+.newContent .line{
+    width: 1px;
+    background-color: #ddd;
+    margin: 0px 30px;
+}
+.newContent .newList{
+    flex:1;
+}
+.newContent .newList .newsListItem{
+    background-color: #efefef;
+    border-radius: 10px;
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+    position: relative;
+}
+.newContent .newList .newsListItem::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #efefef;
+    top: 30px;
+    left: -20px;
+}
+.newContent .newList .newsListItem::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border: 4px solid red;
+    border-radius: 9px;
+    position: absolute;
+    top: 30px;
+    left: -40px;
+}
+
+.body-root{
+    width: 375px;
+    height: 100vh;
+    overflow: hidden;
+}
+.momentdatestyle{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #aaa;
+    font-weight: lighter;
+}
+.cards{
+    width: 375px;
+    display: flex;
+    flex-wrap:wrap;
+}
+.cardItem{
+    margin-bottom:8px ;
+}
+.totalNum,.totalContent,.totalcompare{
+    text-align: center;
+    width: 80px;
+    margin: 3px 6px;
+}
+
+.totalContent{
+    font-size: 10px;
+    background-color: rgba(235, 235, 235, 0.719);
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+.confirmedTotal{
+    font-size: 20px;
+    color: #c3453d;
+}
+
+.treatingTotal{
+    font-size: 20px;
+    color: #d96322;
+}
+.inboundTotal{
+    font-size: 20px;
+    color: #e64426;
+}
+.suspectedTotal{
+    font-size: 20px;
+    color: #f2a417;
+}
+
+.asymptomaticTotal{
+    font-size: 20px;
+    color: #85409c;
+}
+.deathsTotal{
+    font-size: 20px;
+    color: #0f3046;
+}
+.curesTotal{
+    font-size: 20px;
+    color: #39c4c4;
+}
+.totalcompare{
+    font-size: 10px;
+}
+/* 'confirmedTotal',//累计确诊
+                'treatingTotal',//现有确诊
+                'inboundTotal',//境外输入人数
+                'suspectedTotal',//疑似病例
+                'asymptomaticTotal',//无症状感染者
+                'deathsTotal',//死亡人数
+                'curesTotal',//治愈人数 */

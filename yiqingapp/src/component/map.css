@@ -1,0 +1,10 @@
+#main{
+    width:375;
+    height:250px;
+    margin: auto;
+    border:1px solid #ddd;
+    touch-action: none;
+  }
+.mapButton{
+  touch-action: none;
+}
