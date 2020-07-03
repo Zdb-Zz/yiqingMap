@@ -31,7 +31,7 @@
     width: 1500px;
     height: calc(100vh - 45px);
     transition: 0.5s ease;
-    overflow-x: auto;
+    overflow: auto;
 }
 .contentItem{
     width: 375px;
@@ -46,7 +46,6 @@
     line-height: 50px;
 }
 .newContent{
-    height: 1100px;
     display: flex;
 }
 .newContent .line{
@@ -158,3 +157,31 @@
                 'asymptomaticTotal',//无症状感染者
                 'deathsTotal',//死亡人数
                 'curesTotal',//治愈人数 */
+
+                
+ul,li{
+    list-style: none;
+    padding: 10px;
+    font-family: '微软雅黑';
+    text-align: center;
+  }
+  ul{
+    width: 375px;
+    margin: auto;
+    border: 2px rgb(133, 133, 133) solid;
+  }
+  li{
+    display: flex;
+  }
+  span{
+    flex: 1;
+  }
+  li:nth-child(odd){
+    background-color: #DDDDDD;
+  }
+  span:nth-child(1) {
+    font-weight: bold;
+  }
+  span:nth-child(2) {
+    color: red;
+  }

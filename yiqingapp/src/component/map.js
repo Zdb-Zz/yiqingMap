@@ -7,18 +7,18 @@ class Map extends React.Component{
         super(props);
         this.state = {
         }
-        
     }
-   
-    
     render(){
         
         return(
             <div>
+                <div className="contentItem new">
+                    <div className='banner'>
+                        <h1>疫情地图</h1>
+                    </div>
+                </div>
                 <div id='main'></div>
-                
             </div>
-            
         )
     }
    async componentDidMount(){

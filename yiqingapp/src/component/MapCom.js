@@ -5,6 +5,7 @@ import '../assets/css/style.css';
 import moment from 'moment';
 import CardItem from './card.js'
 import Map from './map.js'
+import DateList from './dateList.js'
 class MapCom extends React.Component{
     constructor(props){
         super(props)
@@ -52,7 +53,7 @@ class MapCom extends React.Component{
       }
 
     render(){
-        //console.log(this.state.confirmedTotal)
+       // console.log(this.state.data)
 
         return(
             <div className="contentItem new">
@@ -77,7 +78,8 @@ class MapCom extends React.Component{
                     <CardItem  className='curesTotal' num={this.state.curesTotal} content='治愈人数' add={this.state.curesIncrStr}></CardItem>
                 </div>
                 <span className="momentdatestyle">昨日+数据：根据国家和省市卫健委数据实时更新</span>
-                <Map dataObj={this.state.data}></Map>
+                <Map></Map>
+                <DateList ></DateList>
             </div>
         )
     }
